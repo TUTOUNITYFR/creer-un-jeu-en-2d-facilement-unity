@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 112615057}
   m_Layer: 0
-  m_Name: GroundCheckLeft
+  m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112615056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.195, y: -1.0135, z: 0}
+  m_LocalPosition: {x: 0.035, y: -0.703, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1322710118}
@@ -1313,19 +1313,18 @@ GameObject:
   - component: {fileID: 1322710117}
   - component: {fileID: 1322710116}
   - component: {fileID: 1322710115}
-  - component: {fileID: 1322710114}
-  - component: {fileID: 1322710119}
   - component: {fileID: 1322710120}
   - component: {fileID: 1322710121}
-  m_Layer: 0
+  - component: {fileID: 1322710114}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1322710114
-BoxCollider2D:
+--- !u!70 &1322710114
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1337,19 +1336,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025114894, y: -0.27788252}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9670787, y: 1.3180388}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.027704597, y: -0.29768634}
+  m_Size: {x: 0.9656954, y: 1.4046273}
+  m_Direction: 0
 --- !u!50 &1322710115
 Rigidbody2D:
   serializedVersion: 4
@@ -1367,7 +1356,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -1385,8 +1374,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 250
   jumpForce: 300
-  groundCheckLeft: {fileID: 112615057}
-  groundCheckRight: {fileID: 1437325699}
+  groundCheck: {fileID: 112615057}
+  groundCheckRadius: 0.4
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 1
   rb: {fileID: 1322710115}
   animator: {fileID: 1322710120}
   spriteRenderer: {fileID: 1322710117}
@@ -1452,26 +1444,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 112615057}
-  - {fileID: 1437325699}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1322710119
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322710113}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5982269}
-  serializedVersion: 2
-  m_Radius: 0.4017731
 --- !u!95 &1322710120
 Animator:
   serializedVersion: 3
@@ -1510,36 +1485,6 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 1322710117}
   healthBar: {fileID: 774865532}
---- !u!1 &1437325698
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1437325699}
-  m_Layer: 0
-  m_Name: GroundCheckRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1437325699
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437325698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.263, y: -1.0135, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1322710118}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1731260547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5112,7 +5057,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 2105484741}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 38c3608aec291e5488a1d91a8ba0bc09, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
