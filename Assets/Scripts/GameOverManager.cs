@@ -38,12 +38,12 @@ public class GameOverManager : MonoBehaviour
 
     public void MainMenuButton()
     {
-        // Retour au menu principal
+        DontDestroyOnLoadScene.instance.RemoveFromDontDestroyOnLoad();
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitButton()
     {
-        // Fermer le jeu
         Application.Quit();
     }
 }
