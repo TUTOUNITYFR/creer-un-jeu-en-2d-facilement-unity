@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 362298530}
   - component: {fileID: 362298529}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ButtonMainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 600511079}
   - component: {fileID: 600511078}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ButtonQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2447,6 +2447,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5759514034397095684, guid: de9e23cb4d6a01f4295b7f52bc7c47e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de9e23cb4d6a01f4295b7f52bc7c47e3, type: 3}
 --- !u!1 &1249209644
@@ -2462,7 +2467,7 @@ GameObject:
   - component: {fileID: 1249209647}
   - component: {fileID: 1249209646}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonRetry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
