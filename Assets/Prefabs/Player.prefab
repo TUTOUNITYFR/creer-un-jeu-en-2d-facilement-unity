@@ -51,6 +51,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,7 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 250
+  climbSpeed: 150
   jumpForce: 300
+  isClimbing: 0
   groundCheck: {fileID: 7162353123930664310}
   groundCheckRadius: 0.4
   collisionLayers:
@@ -109,6 +112,7 @@ MonoBehaviour:
   rb: {fileID: 7162353122720565124}
   animator: {fileID: 7162353122720565135}
   spriteRenderer: {fileID: 7162353122720565122}
+  playerCollider: {fileID: 7162353122720565125}
 --- !u!50 &7162353122720565124
 Rigidbody2D:
   serializedVersion: 4
@@ -168,6 +172,7 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 7162353122720565122}
   healthBar: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: ab0975610a78d0e44b9e18439635b2cf, type: 3}
 --- !u!70 &7162353122720565125
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

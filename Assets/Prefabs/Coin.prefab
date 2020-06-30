@@ -48,6 +48,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -131,3 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0800480e0120f4cb672768ff8dd3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 972f9ffdc60e37344ae75f9528f82da3, type: 3}

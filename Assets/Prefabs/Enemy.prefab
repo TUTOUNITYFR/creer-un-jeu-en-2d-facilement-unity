@@ -112,6 +112,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -135,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -4365678376696325385, guid: 42ed6c23004c81f4e8814dd54e8ba7a9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -190,7 +191,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 5759514035363740593}
   - {fileID: 5759514033897747131}
-  damageOnCollision: 20
+  damageOnCollision: 100
   graphics: {fileID: 5759514034110230279}
 --- !u!95 &5759514034110230281
 Animator:
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 5759514033559914074}
+  killSound: {fileID: 8300000, guid: cc98e4575b8fed9499fb179d37047c81, type: 3}
 --- !u!1 &5759514035363740590
 GameObject:
   m_ObjectHideFlags: 0
