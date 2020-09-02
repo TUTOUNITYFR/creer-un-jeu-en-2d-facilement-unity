@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e1a2eb86556de34691b203a7f9a1c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Level01
+  levelToLoad: LevelSelect
   settingsWindow: {fileID: 990259146}
 --- !u!114 &1117764513
 MonoBehaviour:
