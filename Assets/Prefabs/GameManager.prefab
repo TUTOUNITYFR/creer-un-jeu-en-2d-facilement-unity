@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2170111801934758569}
   - component: {fileID: 2170111801934758580}
   - component: {fileID: 737803516}
+  - component: {fileID: 1949798533}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -88,3 +89,20 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &1949798533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170111801934758581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b8f82cc79588c499f17300edc993e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pnjNameText: {fileID: 0}
+  animator: {fileID: 0}
+  sellButtonPrefab: {fileID: 7462366240536247313, guid: 29b496e09eda5af45ad41b93b2b17305,
+    type: 3}
+  sellButtonsParent: {fileID: 0}
